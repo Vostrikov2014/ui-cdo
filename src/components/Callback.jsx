@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useAuth } from './authContext';
+import { useAuth } from '../authContext';
 import { useNavigate } from 'react-router-dom';
 
 const Callback = () => {
