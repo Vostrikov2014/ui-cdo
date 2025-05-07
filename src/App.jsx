@@ -7,7 +7,7 @@ import Home from './components/Home';
 
 function App() {
     return (
-        <AuthProvider>
+        //<AuthProvider>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
                     <Route path="/auth/callback" element={<Callback />} />
                 </Routes>
             </Router>
-        </AuthProvider>
+        //</AuthProvider>
     );
 }
 
