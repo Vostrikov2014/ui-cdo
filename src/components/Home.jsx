@@ -1,22 +1,15 @@
-import React from 'react';
-import { useAuth } from '../authContext';
+import { useAuth } from '../AuthContext';
 
-const Home = () => {
-    const { isAuthenticated, user, logout } = useAuth();
+export default function Home() {
+    const { login } = useAuth();
 
     return (
-        <div>
-            <h1>Welcome</h1>
-            {isAuthenticated ? (
-                <div>
-                    <p>Hello, {user?.name || user?.email || 'User'}!</p>
-                    <button onClick={logout}>Logout</button>
-                </div>
-            ) : (
-                <p>Please login to continue</p>
-            )}
+        <div className="container">
+            <h1>Добро пожаловать!</h1>
+            <p>Это демонстрационное приложение для OAuth2 авторизации</p>
+            <button onClick={login} className="login-button">
+                Войти через OAuth2 Server
+            </button>
         </div>
     );
-};
-
-export default Home;
+}
