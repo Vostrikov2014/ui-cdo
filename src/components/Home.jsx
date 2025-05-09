@@ -1,4 +1,4 @@
-import { useAuth } from '../AuthContext';
+import { useAuth } from './AuthContext.jsx';
 
 export default function Home() {
     const { login } = useAuth();

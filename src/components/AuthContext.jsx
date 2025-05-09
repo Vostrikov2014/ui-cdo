@@ -48,7 +48,7 @@ export function AuthProvider({ children }) {
     };
 
     const login = () => {
-        window.location.href = `http://localhost:9000/oauth2/authorize?response_type=code&client_id=client&redirect_uri=http://localhost:3000&scope=openid`;
+        window.location.href = `http://localhost:9000/oauth2/authorize?response_type=code&client_id=client&scope=openid&redirect_uri=http://localhost:3000`;
     };
 
     const logout = () => {

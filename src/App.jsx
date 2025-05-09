@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom';
-import {AuthProvider} from './AuthContext';
+import {AuthProvider} from './components/AuthContext.jsx';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import './styles.css';

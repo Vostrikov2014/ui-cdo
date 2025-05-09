@@ -1,4 +1,4 @@
-import {useAuth} from '../AuthContext';
+import {useAuth} from './AuthContext.jsx';
 
 export default function Dashboard() {
     const {token, logout} = useAuth();
